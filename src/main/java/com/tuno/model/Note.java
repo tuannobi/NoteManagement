@@ -11,21 +11,21 @@ public class Note {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "note_id")
-    private Long noteId;
+    @Column(name = "id")
+    private Long id;
 
     @Column(name = "title")
     private String title;
 
-    @Column(name = "content")
-    private String content;
+    @Column(name = "text")
+    private String text;
 
-    public Long getNoteId() {
-        return noteId;
+    public Long getId() {
+        return id;
     }
 
-    public void setNoteId(Long noteId) {
-        this.noteId = noteId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -36,11 +36,11 @@ public class Note {
         this.title = title;
     }
 
-    public String getContent() {
-        return content;
+    public String getText() {
+        return text;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setText(String text) {
+        this.text = text;
     }
 }
